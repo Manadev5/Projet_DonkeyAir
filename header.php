@@ -16,6 +16,7 @@
                     <li class="nav-item">
                     <a class="nav-link" href="index.php">home</a>
                     </li>
+                    
                     <li class="nav-item">
                     <a class="nav-link" href="admin.php">admin</a>
                     </li>
@@ -29,7 +30,7 @@
 
                     <li class="nav-item">
                     <a class="nav-link" href="create.php">create</a>
-                    
+
                     </li>
                     <?php }?>
                     <li class="nav-item">
