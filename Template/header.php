@@ -6,13 +6,10 @@
     </head>
     <body>
 
-      <h1 class="title">Cinematheque</h1>
+      <h1 class="title">DonkeyAir</h1>
       <nav>
             <div class="elements-nav">
                 <ul >
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="accueil.php">Home</a>
-                    </li>
                     <li class="nav-item">
                     <a class="nav-link" href="index.php">home</a>
                     </li>
@@ -43,10 +40,7 @@
                     <a class="nav-link" href="basket.php">basket</a>     
                     </li>
                 </ul>
-                <form class="d-flex" role="search" action="accueil.php" method="GET">
-                    <input  type="search" placeholder="Search Serie" aria-label="Search" name="search">
-                    <button  type="submit">Search</button>
-                </form>
+               
                 </div>
             </div>
        </nav>

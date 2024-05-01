@@ -1,4 +1,9 @@
 <?php
-$pdo = new PDO('mysql:host=localhost;dbname=donkeyair', 'root', 'manasse22');
+
+
+
+include 'Controllers/controlHome.php';
+
+showTickets();
 
 ?>

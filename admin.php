@@ -1,4 +1,4 @@
-<form  action="/Models/adminLog.php" method="post" class="sign-form">
+<form  action="/Controllers/controlConnexion.php" method="post" class="sign-form">
         <div>
         <label for="name">name :</label><br>
         <input type="text"  id="name"  name="name">
