@@ -2,21 +2,19 @@
     <section>
         <img src="" alt="">
         <p></p>
-        <form class="d-flex" role="search" action="accueil.php" method="GET">
+        <form class="d-flex" role="search" action="index.php" method="GET">
 
-            <select name="options-travel" id="select-travel">
-                <option>One way</option>
-                <option>round trip</option>
-            </select>
+           
 
-            <input  type="search" placeholder="Departure" aria-label="Search" name="search">
+            <input  type="search" placeholder="Departure" aria-label="Search" name="search-dep">
             <button  type="submit">Search</button>
 
-            <input  type="search" placeholder="Destination" aria-label="Search" name="search">
+            <input  type="search" placeholder="Destination" aria-label="Search" name="search-des">
             <button  type="submit">Search</button>
         </form>
     </section>
     <?php
+    if($depSearch !== '' AND $desSearch !==''){
           foreach($tickets as $ticket){
             ?>
             <div>
@@ -35,7 +33,9 @@
             </div>
             <?php
           }
-
+        }elseif( $tickets = []){
+            echo 'aucun resultat';
+        }
         ?>
     <section>
         
