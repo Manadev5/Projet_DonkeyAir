@@ -2,9 +2,6 @@
 
 function connexion($table, $bddName, $postName,$postInput, $secondColumn, $sessionName, $id, $redirection){
 
-
-$password =$_POST['password'];
-
 $pdo = new PDO('mysql:host=localhost;dbname=donkeyair', 'root', 'manasse22');
 
 $statement = $pdo->prepare("SELECT * FROM $table WHERE $bddName =:name");
@@ -14,7 +11,7 @@ $user = $statement->fetch(PDO::FETCH_ASSOC);
 
 try{
 
-if($postName !== $user['name']){
+if($postName !== $user[$bddName]){
     echo 'wrong username ';
     var_dump($postName);
 
