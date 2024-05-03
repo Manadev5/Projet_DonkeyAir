@@ -1,6 +1,6 @@
 <?php
 
-function logOut($name){
+function deleteSession($name){
 
     unset($_SESSION[$name]);
 }

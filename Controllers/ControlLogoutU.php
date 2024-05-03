@@ -3,11 +3,11 @@ session_start();
 
 function logoutUser(){
 
-  include '../Models/logOut.php';
+  include '../Models/deleteSession.php';
 
   $name='user_log';
 
-  logOut($name);
+  deleteSession($name);
 
   header('location: ../index.php');
 

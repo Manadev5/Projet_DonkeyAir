@@ -4,11 +4,11 @@ session_start();
 
 function logoutAdmin(){
 
-  include '../Models/logOut.php';
+  include '../Models/deleteSession.php';
 
   $name='admin_log';
 
-  logOut($name);
+  deleteSession($name);
 
   var_dump($_SESSION['admin_log']);
 

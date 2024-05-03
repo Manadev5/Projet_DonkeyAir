@@ -5,11 +5,8 @@
         <form class="d-flex" role="search" action="index.php" method="GET">
 
            
-
-            <input  type="search" placeholder="Departure" aria-label="Search" name="search-dep">
-            <button  type="submit">Search</button>
-
-            <input  type="search" placeholder="Destination" aria-label="Search" name="search-des">
+            <input  type="search" placeholder="Departure" aria-label="Search" name="search-des">
+            <input  type="search" placeholder="Destination" aria-label="Search" name="search-dep">
             <button  type="submit">Search</button>
         </form>
     </section>
@@ -31,7 +28,9 @@
                     <li><?=$ticket['price']?></li>
                 </ul>
             </div>
-            <?php
+            <?php if(isset($_SESSION['user_log'])){?>
+            <a href='Models/stockSession.php?id=<?=$ticket['ticket_id']?>'>add to basket</a>
+            <?php }
           }
         }elseif( $tickets = []){
             echo 'aucun resultat';
