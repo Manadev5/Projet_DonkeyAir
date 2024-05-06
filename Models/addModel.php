@@ -3,7 +3,7 @@
 function createTicket($departure_date,$arrival_date,$boarding,$arrival_hour,$travel_time,$travel_number,$sit_number,$destination_id,$departure_id,$price){
 
 //partie a definir avec formulaire
-$pdo = new PDO('mysql:host=localhost;dbname=donkeyair', 'root', 'manasse22');
+$pdo = new PDO('mysql:host=localhost;dbname=donkeyair', 'root');
 $statement=$pdo->prepare("INSERT INTO ticket (departure_date, arrival_date, boarding_hour, arrival_hour, travel_time, travel_number, sit_number, destination_id, departure_id, price)
                 VALUES (:departure_date, :arrival_date, :boarding_hour,:arrival_hour,:travel_time, :travel_number, :sit_number, :destination_id, :departure_id, :price)");
 $statement->bindValue(":departure_date", $departure_date, PDO::PARAM_STR);
