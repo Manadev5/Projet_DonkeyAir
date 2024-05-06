@@ -17,7 +17,7 @@ include 'Controllers/controlCreate.php';
 <form  action="Controllers/updateTicketController.php?id=<?= $ticket['id']?>id_author=<?= $author['author_id']?>id_category=<?= $category['category_id']?>" method="post" class="sign-form">
         <div>
         <label for="departure_date">Date de départ <i>(AAAA-MM-JJ)</i> :</label><br>
-        <input type="date"  id="departure_date"  name="departure_date" value="<?= $book['title'] ?>">
+        <input type="date"  id="departure_date"  name="departure_date" value="<?= $ticket['title'] ?>">
         </div>
         <div>
         <label for="arrival_date">Date d'arrivee <i>(AAAA-MM-JJ)</i> :</label><br>
