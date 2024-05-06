@@ -15,7 +15,7 @@ function updateTicket($id, $departure_date, $arrival_date, $boarding_hour, $arri
         travel_number = :travel_number, 
         sit_number = :sit_number ,
          PDO::PARAM_INT,
-    WHERE ticket_id = :id');
+    WHERE ticket_id = :id , departure_id = :departure_id , destination_id = :destination_id ');
 
   $stmt->bindValue(':departure_date',$departure_date, PDO::PARAM_INT);
   $stmt->bindValue(':arrival_date', $arrival_date, PDO::PARAM_INT); 
@@ -25,6 +25,7 @@ function updateTicket($id, $departure_date, $arrival_date, $boarding_hour, $arri
   $stmt->bindValue(':travel_number',$travel_number, PDO::PARAM_STR); 
   $stmt->bindValue(':sit_number',$sit_number, PDO::PARAM_STR); 
   $stmt->bindValue(':ticket_id',$id, PDO::PARAM_STR); 
+
             
             
  
