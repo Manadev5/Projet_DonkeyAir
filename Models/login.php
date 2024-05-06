@@ -2,7 +2,7 @@
 
 function connexion($table, $bddName, $postName,$postInput, $secondColumn, $sessionName, $id, $redirection){
 
-$pdo = new PDO('mysql:host=localhost;dbname=donkeyair', 'root');
+$pdo = new PDO('mysql:host=localhost;dbname=donkeyair', 'root', 'manasse22');
 
 $statement = $pdo->prepare("SELECT * FROM $table WHERE $bddName =:name");
 $statement->bindValue(':name', $postName, PDO::PARAM_STR);

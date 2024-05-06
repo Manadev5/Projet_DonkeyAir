@@ -32,7 +32,7 @@
             <a href='Models/stockSession.php?id=<?=$ticket['ticket_id']?>'>add to basket</a>
             <?php }
           }
-        }elseif( $tickets = []){
+        }elseif($results == []){
             echo 'aucun resultat';
         }
         ?>
