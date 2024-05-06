@@ -1,4 +1,5 @@
 <?php
-session_start();
+include 'Controllers/controlRead.php';
 
-include 'Template/header.php';
+
+readCountry();
