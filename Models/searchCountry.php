@@ -2,7 +2,7 @@
 
 function searchCountry($desCountry, $depCountry, $depSearch, $desSearch){
 
-    $pdo = new PDO('mysql:host=localhost;dbname=donkeyair', 'root', 'manasse22');
+    $pdo = new PDO('mysql:host=localhost;dbname=donkeyair', 'root', '');
 
     $stmt = $pdo->prepare("SELECT * FROM ticket t INNER JOIN departure d
      ON t.departure_id = d.departure_id
