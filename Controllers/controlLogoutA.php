@@ -12,6 +12,7 @@ function logoutAdmin(){
 
   var_dump($_SESSION['admin_log']);
 
+  header('location: ../index.php');
 }
 
 logoutAdmin();
