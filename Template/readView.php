@@ -1,6 +1,6 @@
 <?php
 
-include '/Template/header.php';
+include 'Template/header.php';
 ?>
 
 
@@ -16,25 +16,27 @@ include '/Template/header.php';
 <div>
     <?php foreach($tickets as $ticket): ?>
         <div>
-            <p>Ticket ID: <?= htmlspecialchars($ticket['id']) ?></p>
-            <p>Départ: <?= htmlspecialchars($ticket['departure_date']) ?></p>
-            <p>Destination: <?= htmlspecialchars($ticket['arrival_date']) ?></p>
-            <p>Départ: <?= htmlspecialchars($ticket['boarding_hour']) ?></p>
-            <p>Destination: <?= htmlspecialchars($ticket['arrival_hour']) ?></p>
-            <p>Départ: <?= htmlspecialchars($ticket['travel_time']) ?></p>
-            <p>Destination: <?= htmlspecialchars($ticket['travel_number']) ?></p>
-            <p>Départ: <?= htmlspecialchars($ticket['sit_number']) ?></p>
+            <p>Ticket ID: <?= htmlspecialchars($ticket['ticket_id']) ?></p>
+            Departure:<h3> <?= htmlspecialchars($ticket['country']) ?></h3><br>
+            Destination:<h3><?= htmlspecialchars($ticket['des_country']) ?></h3>
+            <p>Departure date: <?= htmlspecialchars($ticket['departure_date']) ?></p>
+            <p>Arrival date: <?= htmlspecialchars($ticket['arrival_date']) ?></p>
+            <p>Boarding hour: <?= htmlspecialchars($ticket['boarding_hour']) ?></p>
+            <p>Arrival hour: <?= htmlspecialchars($ticket['arrival_hour']) ?></p>
+            <p>Travel time: <?= htmlspecialchars($ticket['travel_time']) ?></p>
+            <p>Travel number: <?= htmlspecialchars($ticket['travel_number']) ?></p>
+            <p>Sit number: <?= htmlspecialchars($ticket['sit_number']) ?></p>
           
            
 
             <form action="edit.php" method="POST">
-                <input type="hidden" name="ticket_id" value="<?= htmlspecialchars($ticket['id']) ?>">
+                <input type="hidden" name="ticket_id" value="<?= htmlspecialchars($ticket['ticket_id']) ?>">
                 <input type="submit" value="Modifier">
             </form>
 
             
             <form action="delete.php" method="POST">
-                <input type="hidden" name="ticket_id" value="<?= htmlspecialchars($ticket['id']) ?>">
+                <input type="hidden" name="ticket_id" value="<?= htmlspecialchars($ticket['ticket_id']) ?>">
                 <input type="submit" value="Delete">
             </form>
         </div>
