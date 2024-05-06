@@ -18,8 +18,13 @@ include 'Controllers/controlCreate.php';
         <label for="arrival_hour">Heure d'arrivee <i>(HH:MM:SS)</i> :</label><br>
         <input type="text"  id="arrival_hour"  name="arrival_hour">
         </div>
+        <div>
         <label for="travel_time">Temps de trajet <i>(HH:MM:SS)</i> :</label><br>
         <input type="text"  id="travel_time"  name="travel_time">
+        </div>
+        <div>
+        <label for="sit_number">numero de siege : :</label><br>
+        <input type="text"  id="sit_number"  name="sit_number">
         </div>
         <div>
         <label for="travel_number">Numero de vol :</label><br>
