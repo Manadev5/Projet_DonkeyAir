@@ -31,6 +31,9 @@ include 'Controllers/controlCreate.php';
         <input type="text"  id="travel_number"  name="travel_number">
         </div>
         <div>
+        <label for="sit_number">Numero de siege :</label><br>
+        <input type="text"  id="sit_number"  name="sit_number">
+        </div>   
         <label for="departure_id">Lieu de depart :</label><br>
         <select id="departure_id" name="departure_id">
             <?php
