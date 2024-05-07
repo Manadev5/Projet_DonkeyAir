@@ -29,7 +29,7 @@
                 </ul>
             </div>
             <?php if(isset($_SESSION['user_log'])){?>
-            <a href='Models/stockSession.php?id=<?=$ticket['ticket_id']?>'>add to basket</a>
+            <a href='Models/modelStockSession.php?id=<?=$ticket['ticket_id']?>'>add to basket</a>
             <?php }
           }
         }elseif($results == []){

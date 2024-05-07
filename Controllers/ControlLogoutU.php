@@ -3,7 +3,7 @@ session_start();
 
 function logoutUser(){
 
-  include '../Models/deleteSession.php';
+  include '../Models/modelDeleteSession.php';
 
   $name='user_log';
 

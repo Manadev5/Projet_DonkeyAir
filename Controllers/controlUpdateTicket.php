@@ -1,12 +1,5 @@
 <?php
-include '../Models/update-ticket.php';
-
-
-function showTickets2(){
- }
-
-
-
+include '../Models/modelUpdateTicket.php';
 
 
 function handleTicketUpdate() {

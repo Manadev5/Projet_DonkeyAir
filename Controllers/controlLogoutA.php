@@ -4,7 +4,7 @@ session_start();
 
 function logoutAdmin(){
 
-  include '../Models/deleteSession.php';
+  include '../Models/modelDeleteSession.php';
 
   $name='admin_log';
 

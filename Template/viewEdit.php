@@ -1,5 +1,8 @@
 <?php
-include 'Controllers/controlCreate.php';
+include '../Controllers/controlCreate.php';
+
+
+
 $pdo = new PDO('mysql:host=localhost;dbname=donkeyair', 'root');
 $id = $_GET['id'];
 $stmt = $pdo->prepare("SELECT * FROM ticket WHERE ticket_id = $id ");
@@ -21,7 +24,7 @@ $tickets = $stmt->fetch(PDO::FETCH_ASSOC);
 
 <body>
 <h2>Modifier les Tickets</h2>
-<form  action="Controllers/updateTicketController.php?id=<?= $tickets['ticket_id']?>" method="post" class="sign-form">
+<form  action="../Controllers/controlUpdateTicket.php?id=<?= $tickets['ticket_id']?>" method="post" class="sign-form">
         <div>
         <label for="departure_date">Date de départ <i>(AAAA-MM-JJ)</i> :</label><br>
         <input type="date"  id="departure_date"  name="departure_date" value="<?= $tickets['departure_date'] ?>">
