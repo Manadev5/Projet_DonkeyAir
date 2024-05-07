@@ -6,6 +6,8 @@ function addTicket(){
 
     $departure_date=$_POST["departure_date"];
     $arrival_date=$_POST["arrival_date"];
+    $boarding_hour=$_POST["boarding_hour"];
+    $arrival_hour=$_POST["arrival_hour"];
     $travel_time=$_POST["travel_time"];
     $travel_number=$_POST["travel_number"];
     $sit_number=$_POST["sit_number"];

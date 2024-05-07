@@ -1,6 +1,6 @@
 <?php
 
-$pdo = new PDO('mysql:host=localhost;dbname=donkeyair', 'root', '');
+$pdo = new PDO('mysql:host=localhost;dbname=donkeyair', 'root');
 
 
 function updateTicket($id, $departure_date, $arrival_date, $boarding_hour, $arrival_hour, $travel_time, $travel_number, $sit_number, $destination_id, $departure_id , $price) {
