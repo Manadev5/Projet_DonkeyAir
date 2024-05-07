@@ -16,7 +16,7 @@ include '/Template/header.php';
 <div>
     <?php foreach($tickets as $ticket): ?>
         <div>
-            <p>Ticket ID: <?= htmlspecialchars($ticket['id']) ?></p>
+            <p>Ticket ID: <?= htmlspecialchars($ticket['ticket_id']) ?></p>
             <p>Départ: <?= htmlspecialchars($ticket['departure_date']) ?></p>
             <p>Destination: <?= htmlspecialchars($ticket['arrival_date']) ?></p>
             <p>Départ: <?= htmlspecialchars($ticket['boarding_hour']) ?></p>
@@ -27,7 +27,7 @@ include '/Template/header.php';
           
            
 
-            <form action="edit.php" method="POST">
+            <form action="edit.php?id=<?= $ticket['ticket_id']?>" method="POST">
                 <input type="hidden" name="ticket_id" value="<?= htmlspecialchars($ticket['id']) ?>">
                 <input type="submit" value="Modifier">
             </form>
