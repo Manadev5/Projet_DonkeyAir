@@ -9,5 +9,5 @@ $statement=$pdo->prepare("DELETE FROM ticket WHERE ticket_id=:id");
 $statement->bindValue(":id",$id,PDO::PARAM_INT);
 $statement->execute();
 
-header("location:../tickets.php");
-?> 
+header("location:../pageTickets.php");
+?>

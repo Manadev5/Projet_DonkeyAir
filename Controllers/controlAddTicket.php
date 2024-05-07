@@ -2,7 +2,7 @@
 
 function addTicket(){
 
-    include '../Models/addModel.php';
+    include '../Models/modelAdd.php';
 
     $departure_date=$_POST["departure_date"];
     $arrival_date=$_POST["arrival_date"];

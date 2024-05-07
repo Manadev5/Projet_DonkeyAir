@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-include 'Template/header.php';
+include 'Template/viewHeader.php';
 
 ?>
 
@@ -32,13 +32,13 @@ include 'Template/header.php';
           
            
 
-            <form action="edit.php" method="POST">
+            <form action="Template/viewEdit.php?id=<?=$ticket['ticket_id']?>" method="POST">
                 <input type="hidden" name="ticket_id" value="<?= htmlspecialchars($ticket['ticket_id']) ?>">
                 <input type="submit" value="Modifier">
             </form>
 
             
-            <form action="Models/deleteTicket.php" method="POST">
+            <form action="Models/modelDeleteTicket.php" method="POST">
                 <input type="hidden" name="ticket_id" value="<?= htmlspecialchars($ticket['ticket_id']) ?>">
                 <input type="submit" value="Delete">
             </form>

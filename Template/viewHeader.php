@@ -17,16 +17,13 @@
                     </li>
 
                     <li class="nav-item">
-                    <a class="nav-link" href="tickets.php">tickets</a>
+                    <a class="nav-link" href="pageTickets.php">tickets</a>
                     </li>
                     
                     <li class="nav-item">
-                    <a class="nav-link" href="create.php">create</a>
+                    <a class="nav-link" href="pageCreate.php">create</a>
                     </li>
                   
-                    <li class="nav-item">
-                       <a class="nav-link" href="edit.php">edit</a>
-                    </li>
 
                     <li class="nav-item">
                        <a class="nav-link" href="Controllers/controlLogoutA.php">log-out</a>
@@ -37,7 +34,7 @@
                     </li>
                         
                     <li class="nav-item">
-                    <a class="nav-link" href="basket.php">basket</a>     
+                    <a class="nav-link" href="pageBasket.php">basket</a>     
                     </li>
 
                     <li class="nav-item">
@@ -48,10 +45,10 @@
                     <a class="nav-link" href="index.php">home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="admin.php">admin</a>
+                    <a class="nav-link" href="pageAdmin.php">admin</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="login.php">login</a>
+                    <a class="nav-link" href="pageLogin.php">login</a>
                     </li>
 
                     <?php } ?>
