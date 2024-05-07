@@ -1,6 +1,8 @@
 <?php
 
+session_start();
 include 'Template/header.php';
+
 ?>
 
 
@@ -35,7 +37,7 @@ include 'Template/header.php';
             </form>
 
             
-            <form action="delete.php" method="POST">
+            <form action="Models/deleteTicket.php" method="POST">
                 <input type="hidden" name="ticket_id" value="<?= htmlspecialchars($ticket['ticket_id']) ?>">
                 <input type="submit" value="Delete">
             </form>
