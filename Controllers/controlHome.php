@@ -1,9 +1,8 @@
 <?php
 
 function showTickets(){
-    include 'Template/header.php';
-
-    include 'Models/searchCountry.php';
+    include 'Template/viewHeader.php';
+    include 'Models/modelSearchCountry.php';
 
     if (isset($_GET['search-dep'])){
         $depSearch = $_GET['search-dep'];
@@ -25,7 +24,7 @@ function showTickets(){
 
     $results = searchCountry($desCountry, $depCountry, $desSearch, $depSearch);
     
-    include 'Template/Home.php';
+    include 'Template/viewHome.php';
     
 }
 
