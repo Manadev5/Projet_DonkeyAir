@@ -10,4 +10,4 @@ $statement->bindValue(":id",$id,PDO::PARAM_INT);
 $statement->execute();
 
 header("location:../tickets.php");
-?>
+?> 
