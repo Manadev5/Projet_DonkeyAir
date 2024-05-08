@@ -1,8 +1,8 @@
 <?php
 
 function showTickets(){
-    include 'Template/viewHeader.php';
-    include 'Models/modelSearchCountry.php';
+    include __DIR__.'/../Template/viewHeader.php';
+    include __DIR__.'/../Models/modelSearchCountry.php';
 
     if (isset($_GET['search-dep'])){
         $depSearch = $_GET['search-dep'];

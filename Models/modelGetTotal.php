@@ -1,6 +1,6 @@
 <?php
 
-include_once 'Models/modelBasket.php';
+include_once __DIR__.'/modelBasket.php';
 
 function getTotal(){
     $totalPrice=0;

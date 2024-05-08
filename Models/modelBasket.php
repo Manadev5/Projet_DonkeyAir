@@ -3,7 +3,7 @@
 function findTicket($id){
 
 
-    $pdo = new PDO('mysql:host=localhost;dbname=donkeyair', 'root','manasse22');
+    include __DIR__.'/modelConnexionBdd.php';
 
 
     $stmt = $pdo->prepare("SELECT * FROM ticket t INNER JOIN departure d

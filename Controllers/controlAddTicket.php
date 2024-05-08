@@ -2,7 +2,7 @@
 
 function addTicket(){
 
-    include '../Models/modelAdd.php';
+    include __DIR__.'/../Models/modelAdd.php';
 
     $departure_date=$_POST["departure_date"];
     $arrival_date=$_POST["arrival_date"];
@@ -19,7 +19,7 @@ function addTicket(){
 
     createTicket($departure_date,$arrival_date,$boarding,$arrival_hour,$travel_time,$travel_number,$sit_number,$destination_id,$departure_id,$price);
     
-    header("location: ../index.php");
+    header("location: ../index.php?page=tickets");
 }
 
 addTicket();

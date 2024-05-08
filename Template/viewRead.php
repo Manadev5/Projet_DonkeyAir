@@ -1,7 +1,6 @@
 <?php
 
-session_start();
-include 'Template/viewHeader.php';
+include __DIR__.'/viewHeader.php';
 
 ?>
 

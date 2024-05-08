@@ -1,16 +1,11 @@
 <?php
 include __DIR__.'/../Controllers/controlCreate.php';
 
-$pdo = new PDO('mysql:host=localhost;dbname=donkeyair', 'root');
-$id = $_GET['id'];
-$stmt = $pdo->prepare("SELECT * FROM ticket WHERE ticket_id = $id ");
-$stmt->execute();
-$tickets = $stmt->fetch(PDO::FETCH_ASSOC);
+include __DIR__.'/../Models/modelBasket.php';
 
-
+$tickets = findTicket($_GET['id']);
 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">

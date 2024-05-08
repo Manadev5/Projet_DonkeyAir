@@ -3,31 +3,27 @@
 function putTicket(){
     session_start();
     
-    include 'Template/viewHeader.php';
-    include 'Models/modelBasket.php';
-    include 'Template/header.php';
-    include_once 'Models/modelBasket.php';
-    include 'Models/getTotal.php';
+    include __DIR__.'/../Template/viewHeader.php';
+    include_once __DIR__.'/../Models/modelBasket.php';
+    include __DIR__.'/../Models/getTotal.php';
 
     $totalPrices=0;
 
     if(isset($_SESSION['basket_id'])){
-        foreach($_SESSION['basket_id'] as $idBasket){
-        $tickets =  findTicket($idBasket);
-        include 'Template/viewBasketTable.php';
         foreach($_SESSION['basket_id'] as $key=> $row ){
         
         $ticket =  findTicket($key);
-        include 'Template/basket-table.php';
+        include __DIR__.'/../Template/viewBasketTable.php';
         }
         var_dump($_SESSION['basket_id']);
     }
     if(isset($_SESSION['basket_id'])){
     ?> 
    total : <?=getTotal()?>
+   <a href='controlClear.php'>vider el panier</a>
 
  <?php
    }
 }
-}
+
 

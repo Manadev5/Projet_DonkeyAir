@@ -1,9 +1,8 @@
 <?php
-session_start();
 
 function logoutUser(){
 
-  include '../Models/modelDeleteSession.php';
+  include __DIR__.'/../Models/modelDeleteSession.php';
 
   $name='user_log';
 

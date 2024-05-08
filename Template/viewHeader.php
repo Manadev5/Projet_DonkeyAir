@@ -13,42 +13,42 @@
                     <?php if(isset($_SESSION['admin_log'])){?>
                     
                     <li class="nav-item">
-                    <a class="nav-link" href="index.php">home</a>
+                    <a class="nav-link" href="index.php?page=home">home</a>
                     </li>
 
                     <li class="nav-item">
-                    <a class="nav-link" href="pageTickets.php">tickets</a>
+                    <a class="nav-link" href="index.php?page=tickets">tickets</a>
                     </li>
                     
                     <li class="nav-item">
-                    <a class="nav-link" href="pageCreate.php">create</a>
+                    <a class="nav-link" href="index.php?page=create">create</a>
                     </li>
                   
 
                     <li class="nav-item">
-                       <a class="nav-link" href="Controllers/controlLogoutA.php">log-out</a>
+                       <a class="nav-link" href="index.php?page=log-out-admin">log-out</a>
                     </li>
                     <?php }else if(isset($_SESSION['user_log'])){?>
                     <li class="nav-item">
-                    <a class="nav-link" href="index.php">home</a>
+                    <a class="nav-link" href="index.php?page=home">home</a>
                     </li>
                         
                     <li class="nav-item">
-                    <a class="nav-link" href="pageBasket.php">basket</a>     
+                    <a class="nav-link" href="index.php?page=basket">basket</a>     
                     </li>
 
                     <li class="nav-item">
-                    <a class="nav-link" href="Controllers/controlLogoutU.php">log-out</a>     
+                    <a class="nav-link" href="index.php?page=log-out">log-out</a>     
                     </li>
                     <?php }else{?>
                     <li class="nav-item">
-                    <a class="nav-link" href="index.php">home</a>
+                    <a class="nav-link" href="iindex.php?page=home">home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="pageAdmin.php">admin</a>
+                    <a class="nav-link" href="index.php?page=admin">admin</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="pageLogin.php">login</a>
+                    <a class="nav-link" href="index.php?page=login">login</a>
                     </li>
 
                     <?php } ?>

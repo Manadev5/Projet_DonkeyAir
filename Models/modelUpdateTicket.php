@@ -1,11 +1,11 @@
 <?php
 
-$pdo = new PDO('mysql:host=localhost;dbname=donkeyair', 'root');
+
 
 
 function updateTicket($id, $departure_date, $arrival_date, $boarding_hour, $arrival_hour, $travel_time, $travel_number, $sit_number, $destination_id, $departure_id , $price) {
+  include __DIR__.'/modelConnexionBdd.php';
 
-  $pdo = new PDO('mysql:host=localhost;dbname=donkeyair', 'root');
   $stmt = $pdo->prepare('UPDATE ticket 
     SET departure_date = :departure_date,  
         arrival_date = :arrival_date, 
@@ -38,19 +38,3 @@ function updateTicket($id, $departure_date, $arrival_date, $boarding_hour, $arri
 
   $stmt->execute();
 }
-
-
-// UPDATE ticket 
-//     SET departure_date = '1999-02-02' ,
-//         arrival_date = '2005-02-02', 
-//         boarding_hour = '23:55:00' , 
-//         arrival_hour = '01:55:00' , 
-//         travel_time = '02:00:00 ', 
-//         travel_number = '300' , 
-//         sit_number = '2' ,
-//         destination_id = '1',
-//         departure_id = '1',
-//         price = '30.00'
-//     WHERE ticket_id = '1' 
-
-

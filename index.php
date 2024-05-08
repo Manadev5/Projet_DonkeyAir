@@ -1,56 +1,63 @@
 <?php
 session_start();
 
-
-include 'Controllers/controlHome.php';
-
-showTickets();
-
-// Template/home.php
-
-
-var_dump($_SESSION);
 // ROUTEUR : Lien entre URL => logique (controller)
 // recuperation de l'url
 // recuperation de l'url
 
-// if ((isset($_GET['page'])))
-// {
-//     $page=$_GET['page'];
-// }
-// else 
-// {
-//     $page="home";
-// }
+if ((isset($_GET['page'])))
+{
+    $page=$_GET['page'];
+}
+else 
+{
+    $page="home";
+}
 
 
-// if ($page=="home"){
-//     // logique
-//     include_once __DIR__.'Controllers\controlCreate.php';    
-//     home();
-// }
-// if ($page=="liste_book"){
-//     include_once __DIR__.'/Controller/ControllerBooks.php';
-//     displayBooks();
+if ($page=="home"){
+    // logique
+    include __DIR__.'/Controllers/controlHome.php';
+
+    showTickets();
     
-// }
-
-// if ($page=="remove_books"){
-//     include_once __DIR__.'/Controller/ControllerBooks.php';
-//     removeBook();
+}
+if ($page=="admin"){
+    include_once __DIR__.'/Template/viewAdmin.php';
     
-// }
-// if ($page=="category"){
-//     echo "Category";
-// }
+}
 
-// if ($page=="vider_panier"){
-//     include_once __DIR__.'/Controller/ControllerCart.php';
-//     clearCart();
+if ($page=="login"){
+    include_once __DIR__.'/Template/viewLogin.php';
 
-//     echo "je suis dans la page vider panier";
-// }
+    
+}
+if ($page=="basket"){
+    include_once __DIR__.'/Controllers/controlBasket.php';
+
+     putTicket();
+}
+
+if ($page=="create"){
+    include_once __DIR__.'/Template/viewForm.php';
+
+}
+
+if ($page=="tickets"){
+    include __DIR__.'/Controllers/controlRead.php';
+
+    readCountry();
+}
+
+if ($page=="log-out"){
+    include_once __DIR__.'/Controllers/controlLogoutU.php';
+    logoutUser();
+
+}
+
+if ($page=="log-out-admin"){
+    include_once __DIR__.'/Controllers/controlLogoutA.php';
+    logoutAdmin();
+
+}
 ?>
-
-
->

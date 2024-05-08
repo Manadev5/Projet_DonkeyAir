@@ -18,6 +18,6 @@
 
     $_SESSION['basket_id']=$ticket;
 
-    header('location: ../basket.php');
+    header('location: ../index.php?page=basket');
     }
     

@@ -26,4 +26,4 @@ else {
 
 }
 
-header('location: ../pageBasket.php');
+header('location: ../index.php?page=basket');
