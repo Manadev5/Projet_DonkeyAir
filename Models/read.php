@@ -4,7 +4,7 @@ function showCountry(){
 
 
 
-    $pdo = new PDO('mysql:host=localhost;dbname=donkeyair', 'root');
+    $pdo = new PDO('mysql:host=localhost;dbname=donkeyair', 'root','manasse22');
 
 
     $stmt = $pdo->prepare("SELECT * FROM ticket t INNER JOIN departure d

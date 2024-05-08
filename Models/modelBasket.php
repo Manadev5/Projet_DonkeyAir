@@ -3,7 +3,7 @@
 function findTicket($id){
 
 
-    $pdo = new PDO('mysql:host=localhost;dbname=donkeyair', 'root');
+    $pdo = new PDO('mysql:host=localhost;dbname=donkeyair', 'root','manasse22');
 
 
     $stmt = $pdo->prepare("SELECT * FROM ticket t INNER JOIN departure d
@@ -15,7 +15,7 @@ function findTicket($id){
     $stmt->bindValue(':id',$id, PDO::PARAM_INT);
     $stmt->execute();
     
-    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
     return $result;
 

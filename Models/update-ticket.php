@@ -5,7 +5,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=donkeyair', 'root');
 
 function updateTicket($id, $departure_date, $arrival_date, $boarding_hour, $arrival_hour, $travel_time, $travel_number, $sit_number) {
 
-  $pdo = new PDO('mysql:host=localhost;dbname=donkeyair', 'root');
+  $pdo = new PDO('mysql:host=localhost;dbname=donkeyair', 'root','manasse22');
   $stmt = $pdo->prepare('UPDATE ticket 
     SET departure_date = :departure_date,  
         arrival_date = :arrival_date, 

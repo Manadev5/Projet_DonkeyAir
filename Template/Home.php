@@ -13,6 +13,7 @@
     <?php
     if($depSearch !== '' AND $desSearch !==''){
           foreach($tickets as $ticket){
+            if($ticket['user_ticket_id'] == NULL){
             ?>
             <div>
                 <h3><?=$ticket['country']?></h3>
@@ -30,7 +31,7 @@
             </div>
             <?php if(isset($_SESSION['user_log'])){?>
             <a href='Models/stockSession.php?id=<?=$ticket['ticket_id']?>'>add to basket</a>
-            <?php }
+            <?php } }
           }
         }elseif($results == []){
             echo 'aucun resultat';

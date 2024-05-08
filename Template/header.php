@@ -25,7 +25,7 @@
                     </li>
                   
                     <li class="nav-item">
-                       <a class="nav-link" href="edit.php">edit</a>
+                       <a class="nav-link" href="index.php">edit</a>
                     </li>
 
                     <li class="nav-item">

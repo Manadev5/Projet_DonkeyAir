@@ -3,5 +3,7 @@
 include 'Controllers/controlBasket.php';
 
 putTicket();
+
 ?>
-total : <?=$totalPrices?>
+
+<a href='Controllers/controlClear.php'>vider el panier</a>
