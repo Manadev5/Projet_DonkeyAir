@@ -1,13 +1,12 @@
 <?php
-include '../Controllers/controlCreate.php';
-
-
+include __DIR__.'/../Controllers/controlCreate.php';
 
 $pdo = new PDO('mysql:host=localhost;dbname=donkeyair', 'root');
 $id = $_GET['id'];
 $stmt = $pdo->prepare("SELECT * FROM ticket WHERE ticket_id = $id ");
 $stmt->execute();
 $tickets = $stmt->fetch(PDO::FETCH_ASSOC);
+
 
 
 ?>
@@ -19,11 +18,11 @@ $tickets = $stmt->fetch(PDO::FETCH_ASSOC);
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edit</title>
+  <title>Edit Tickets</title>
 </head>
 
 <body>
-<h2>Modifier les Tickets</h2>
+<h2>Edit Tickets</h2>
 <form  action="../Controllers/controlUpdateTicket.php?id=<?= $tickets['ticket_id']?>" method="post" class="sign-form">
         <div>
         <label for="departure_date">Date de départ <i>(AAAA-MM-JJ)</i> :</label><br>

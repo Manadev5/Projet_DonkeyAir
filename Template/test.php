@@ -1,5 +1,5 @@
 <?php
-include 'Controllers/controlCreate.php';
+include __DIR__.'/../Controllers/controlCreate.php';
 
 ?>
 <!DOCTYPE html>
