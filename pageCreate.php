@@ -1,4 +1,5 @@
 <?php
-include 'Template/viewForm.php';
+include_once 'Template/viewForm.php';
+
 ?>
 
