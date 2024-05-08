@@ -3,6 +3,8 @@
 function putTicket(){
     session_start();
     
+    include 'Template/viewHeader.php';
+    include 'Models/modelBasket.php';
     include 'Template/header.php';
     include_once 'Models/modelBasket.php';
     include 'Models/getTotal.php';
@@ -10,6 +12,9 @@ function putTicket(){
     $totalPrices=0;
 
     if(isset($_SESSION['basket_id'])){
+        foreach($_SESSION['basket_id'] as $idBasket){
+        $tickets =  findTicket($idBasket);
+        include 'Template/viewBasketTable.php';
         foreach($_SESSION['basket_id'] as $key=> $row ){
         
         $ticket =  findTicket($key);
