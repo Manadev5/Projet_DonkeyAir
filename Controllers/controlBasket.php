@@ -27,5 +27,7 @@ function putTicket(){
    total : <?=getTotal()?>
 
  <?php
-   }}
+   }
+}
+}
 
