@@ -4,8 +4,10 @@
 
         </div>
         <form class="d-flex" role="search" action="index.php" method="GET">
-            <input class="searchbar" type="search" placeholder="Departure" aria-label="Search" name="search-des">
-            <input class="searchbar" type="search" placeholder="Destination" aria-label="Search" name="search-dep">
+            <div class="searching">
+                <input class="searchbar" type="search" placeholder="Departure" aria-label="Search" name="search-des">
+                <input class="searchbar" type="search" placeholder="Destination" aria-label="Search" name="search-dep">
+            </div>
             <button class="searchbutton" type="submit">Search</button>
         </form>
     </section>
@@ -25,7 +27,7 @@
                     </ul>
                     <ul>
                         <li><?=$ticket['travel_time']?>h</li>
-                        
+
                     </ul>
                     
                     <ul>
@@ -38,15 +40,10 @@
                     
                 </section>
                 
-                
-                <li><?=$ticket['departure_date']?></li>
-                <li><?=$ticket['arrival_date']?></li>
-                
-                
-                
-                <li><?=$ticket['sit_number']?></li>
-                <li><?=$ticket['travel_number']?></li>
-                
+                <section class="ticket-top">
+                    <li><?=$ticket['departure_date']?></li>
+                    <li><?=$ticket['arrival_date']?></li>
+                </section>  
             </div>
             <?php if(isset($_SESSION['user_log'])){?>
             <a href='Models/modelStockSession.php?id=<?=$ticket['ticket_id']?>'>add to basket</a>
