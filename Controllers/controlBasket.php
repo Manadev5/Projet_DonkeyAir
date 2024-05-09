@@ -20,7 +20,7 @@ function putTicket(){
         }
         ?>
         total : <?=getTotal()?>
-        <a href='/Controllers/controlClear.php'>vider el panier</a>
+        <a href='/Controllers/controlClear.php'>empty the basket</a>
         <?php
     }else{
       return'';
