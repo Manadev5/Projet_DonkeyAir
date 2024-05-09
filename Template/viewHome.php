@@ -11,11 +11,12 @@
         </form>
     </section>
     <?php
+    
     if($depSearch !== '' AND $desSearch !==''){
-        
+        $res=0;
           foreach($tickets as $ticket){
             if($ticket['user_ticket_id']==NULL){
-            ?>
+            $res=$res+1?>
             <div>
                 <h3><?=$ticket['country']?></h3>
                 <h3><?=$ticket['des_country']?></h3>
@@ -32,12 +33,12 @@
             </div>
             <?php if(isset($_SESSION['user_log'])){?>
             <a href='Models/modelStockSession.php?id=<?=$ticket['ticket_id']?>'>add to basket</a>
-            <?php } 
-
-          }elseif($stmt == false){
+            <?php }
+            
+          }
+        }if($res==0){
             echo 'aucun resultat';
         }
-        }var_dump($stmt);
     }
     ?>
 
