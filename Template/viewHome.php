@@ -33,10 +33,11 @@
             <?php if(isset($_SESSION['user_log'])){?>
             <a href='Models/modelStockSession.php?id=<?=$ticket['ticket_id']?>'>add to basket</a>
             <?php }
-          }
+            
+          }elseif(in_array($depSearch,$tickets['country']) AND in_array($desSearch,$tickets['des_country'])){
+            echo 'aucun resultat';
         }
-    }elseif($results == []){
-        echo 'aucun resultat';
+        }
     }
     ?>
 
