@@ -9,7 +9,7 @@
         <nav>
             <div class="top">
                 <div class="logo-top-left">
-                    <a class="nav-link" href="index.php?page=home"><img src="logo_Donkeyair.png" height="70px" style="margin-top:1%;"></a>
+                    <a class="nav-link" href="index.php?page=home"><img src="assets/logo_Donkeyair.png" height="70px" style="margin-top:1%;"></a>
                 </div>
                 <div class="right">                
                     <?php if(isset($_SESSION['admin_log'])){?>
