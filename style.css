@@ -1,0 +1,51 @@
+@font-face {
+    font-family:caviar ;
+    src: url(helveticaneue.woff);
+}
+
+*{
+    font-family:caviar ;
+}
+
+.top{
+    /*text-align: center;*/
+    width: 96%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 29%;
+    z-index: 1;
+}
+.right li{
+    text-decoration:none;
+    display: flex;
+    color: inherit;
+    
+}
+.right a{
+    margin: -3px;
+    font-size: 17px;
+    text-decoration: none; 
+    color: rgba(249,66,58,255);
+    text-align: center;
+    padding-bottom:10% ;
+    padding-top: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-decoration: none;
+    transition: color 0.5s,background-color  0.5s;
+    border-radius: 10px;
+    display: flex;
+   
+  
+  } 
+.right a:hover {
+    background-color: rgb(251,215,213);
+    
+  }
