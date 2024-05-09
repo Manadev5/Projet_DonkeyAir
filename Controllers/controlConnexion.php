@@ -2,7 +2,7 @@
 
 function connexionAdmin(){
 
-    include '../Models/modelLogin.php';
+    include __DIR__.'/../Models/modelLogin.php';
 
     $table= 'admin';
     $bddName= 'name';
@@ -11,7 +11,7 @@ function connexionAdmin(){
     $secondColumn='password';
     $sessionName='admin_log';
     $id='admin_id';
-    $redirection= '../pageTickets.php';
+    $redirection= '../index.php?page=tickets';
 
     connexion($table, $bddName, $postName,$postColumn, $secondColumn, $sessionName, $id, $redirection);
 

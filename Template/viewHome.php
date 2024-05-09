@@ -39,9 +39,6 @@
         echo 'aucun resultat';
     }
     ?>
-    <section>
-        
-    </section>
 
     <section>
         <h2>DESTINATIONS</h2>

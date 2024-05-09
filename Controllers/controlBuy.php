@@ -5,7 +5,7 @@ function assignTicket()
     session_start();
 
     include 'controlRemoveBasket.php';
-    include '../Models/modelBuyTicket.php';
+    include __DIR__.'/../Models/modelBuyTicket.php';
 
     $userId = $_SESSION['user_log'];
     $ticketId = $_GET['id'];

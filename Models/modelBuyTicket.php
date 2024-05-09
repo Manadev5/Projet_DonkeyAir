@@ -1,7 +1,7 @@
 <?php
 
 function buyTicket($ticketId, $userId){
-    $pdo = new PDO('mysql:host=localhost;dbname=donkeyair', 'root');
+    include __DIR__.'/modelConnexionBdd.php';
 
     $stmt = $pdo->prepare("INSERT INTO ticket_has_user 
                         (ticket_ticket_id, 

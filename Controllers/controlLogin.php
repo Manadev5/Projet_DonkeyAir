@@ -2,7 +2,7 @@
 
 function connexionUser(){
 
-  include '../Models/modelLogin.php';
+  include __DIR__.'/../Models/modelLogin.php';
 
   $table= 'user';
   $bddName= 'firstname';
@@ -11,7 +11,7 @@ function connexionUser(){
   $secondColumn='lastname';
   $sessionName='user_log';
   $id='user_id';
-  $redirection= '../index.php';
+  $redirection= '../index.php?page=home';
 
   connexion($table, $bddName, $postName,$postInput, $secondColumn, $sessionName, $id, $redirection);
 

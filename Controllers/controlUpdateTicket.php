@@ -1,5 +1,5 @@
 <?php
-include '../Models/modelUpdateTicket.php';
+include __DIR__.'/../Models/modelUpdateTicket.php';
 
 
 function handleTicketUpdate() {
@@ -16,15 +16,9 @@ function handleTicketUpdate() {
         $departure_id  = $_POST['departure_id'];
         $price  = $_POST['price'];
 
-        $rowsUpdated = updateTicket($id, $departure_date, $arrival_date, $boarding_hour, $arrival_hour, $travel_time, $travel_number, $sit_number, $destination_id ,$departure_id , $price);
-        var_dump($rowsUpdated);
-
-
-        // if ($rowsUpdated > 0) {
-        //     header('Location: tickets.php?status=updated');
-        // } else {
-        //     echo "Erreur de mise à jour";
-        // }
+        updateTicket($id, $departure_date, $arrival_date, $boarding_hour, $arrival_hour, $travel_time, $travel_number, $sit_number, $destination_id ,$departure_id , $price);
+      
+       header('location: ../index.php?page=tickets');
     }
 }
 

@@ -4,12 +4,12 @@
 
 function readCountry () {
 
-  include 'Models/modelRead.php';  
+  include __DIR__.'/../Models/modelRead.php';  
   
 
 
   $tickets = showCountry();
-  include 'Template/viewRead.php';
+  include __DIR__.'/../Template/viewRead.php';
   
  
 //  var_dump($tickets);

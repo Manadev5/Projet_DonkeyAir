@@ -2,7 +2,7 @@
 function createTicket($departure_date,$arrival_date,$boarding_hour,$arrival_hour,$travel_time,$travel_number,$sit_number,$destination_id,$departure_id,$price){
 
     //partie a definir avec formulaire
-    $pdo = new PDO('mysql:host=localhost;dbname=donkeyair', 'root');
+    include __DIR__.'/modelConnexionBdd.php';
     $statement=$pdo->prepare(
     "INSERT INTO ticket (departure_date, 
     arrival_date, 
