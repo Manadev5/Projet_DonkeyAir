@@ -10,10 +10,20 @@ function showTickets(){
         $depSearch = '';
     }
 
+    $_SESSION['depart']= $depSearch;
+
     if (isset($_GET['search-des'])){
         $desSearch = $_GET['search-des'];
     }else{
         $desSearch = '';
+    }
+
+    $_SESSION['destin']= $desSearch;
+
+    if (isset($_GET['go-one-way'])){
+        $trip = $_GET['go-one-way'];
+    }else{
+        $trip = '';
     }
 
     $desCountry='des.des_country';
@@ -22,7 +32,6 @@ function showTickets(){
 
     $tickets = searchCountry($desCountry, $depCountry, $desSearch, $depSearch);
 
-    $results = searchCountry($desCountry, $depCountry, $desSearch, $depSearch);
     
     include 'Template/viewHome.php';
     

@@ -3,12 +3,8 @@
 function buyTicket($ticketId, $userId){
     include __DIR__.'/modelConnexionBdd.php';
 
-    $stmt = $pdo->prepare("INSERT INTO ticket_has_user 
-                        (ticket_ticket_id, 
-                        user_user_id) 
-                        VALUES 
-                        (:ticket_id, 
-                        :user_id)");
+    $stmt = $pdo->prepare("UPDATE ticket SET user_ticket_id = :user_id
+                           WHERE ticket_id = :ticket_id");
 
 
 
