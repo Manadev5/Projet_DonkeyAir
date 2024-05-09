@@ -21,8 +21,6 @@ function showTickets(){
     
 
     $tickets = searchCountry($desCountry, $depCountry, $desSearch, $depSearch);
-
-    $results = searchCountry($desCountry, $depCountry, $desSearch, $depSearch);
     
     include 'Template/viewHome.php';
     

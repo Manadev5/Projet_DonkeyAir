@@ -32,12 +32,12 @@
             </div>
             <?php if(isset($_SESSION['user_log'])){?>
             <a href='Models/modelStockSession.php?id=<?=$ticket['ticket_id']?>'>add to basket</a>
-            <?php }
-            
-          }elseif(in_array($depSearch,$tickets['country']) AND in_array($desSearch,$tickets['des_country'])){
+            <?php } 
+
+          }elseif($stmt == false){
             echo 'aucun resultat';
         }
-        }
+        }var_dump($stmt);
     }
     ?>
 
