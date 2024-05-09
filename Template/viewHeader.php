@@ -44,7 +44,7 @@
                     <a class="nav-link" href="index.php?page=admin"><i class="fa-solid fa-screwdriver-wrench"></i>&#160Admin</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="index.php?page=login"><i class="fa-solid fa-arrow-right-to-bracket"></i>&#160Log&#160in</a>
+                    <a class="nav-link" href="index.php?page=login"><i class="fa-solid fa-arrow-right-to-bracket"></i>&#160Log&#160inin</a>
                     </li>
 
                     <?php } ?>
