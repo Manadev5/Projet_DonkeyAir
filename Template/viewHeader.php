@@ -26,7 +26,7 @@
                     
 
                     <li class="nav-item">
-                       <a class="nav-link" href="index.php?page=log-out-admin"><i class="fa-solid fa-person-walking-arrow-right"></i>&#160Logout</a>
+                       <a class="nav-link" href="index.php?page=log-out-admin"><i class="fa-solid fa-person-walking-arrow-right"></i>&#160Log&#160out</a>
                     </li>
                     <?php }else if(isset($_SESSION['user_log'])){?>
                     
@@ -36,15 +36,15 @@
                     </li>
 
                     <li class="nav-item">
-                    <a class="nav-link" href="index.php?page=log-out"><i class="fa-solid fa-person-walking-arrow-right"></i>&#160Logout</a>     
+                    <a class="nav-link" href="index.php?page=log-out"><i class="fa-solid fa-person-walking-arrow-right"></i>&#160Log&#160out</a>     
                     </li>
                     <?php }else{?>
                     
                     <li class="nav-item">
-                    <a class="nav-link" href="index.php?page=admin">admin</a>
+                    <a class="nav-link" href="index.php?page=admin"><i class="fa-solid fa-screwdriver-wrench"></i>&#160Admin</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="index.php?page=login">login</a>
+                    <a class="nav-link" href="index.php?page=login"><i class="fa-solid fa-arrow-right-to-bracket"></i>&#160Log&#160in</a>
                     </li>
 
                     <?php } ?>
