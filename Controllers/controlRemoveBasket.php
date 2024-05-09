@@ -10,7 +10,7 @@ function removeBasket(){
 
  unset($_SESSION['basket_id'][$id]);
 
- header('location: ../pageBasket.php ');
+ header('location: ../index.php?page=basket ');
 
 
 }
