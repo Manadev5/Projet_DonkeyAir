@@ -5,18 +5,14 @@
         </div>
         <form class="d-flex" role="search" action="index.php" method="GET">
             <div class="searching">
+            <select class="searchbar" name="go-one-way" id="options">
+                <option value="one">one way</option>
+                <option value="round">round trip</option>
+            </select>
                 <input class="searchbar" type="search" placeholder="Departure" aria-label="Search" name="search-des">
                 <input class="searchbar" type="search" placeholder="Destination" aria-label="Search" name="search-dep">
             </div>
             <button class="searchbutton" type="submit">Search</button>
-
-            <select name="go-one-way" id="options">
-                <option value="one">one way</option>
-                <option value="round">round trip</option>
-            </select>
-            <input  type="search" placeholder="Departure" aria-label="Search" name="search-des">
-            <input  type="search" placeholder="Destination" aria-label="Search" name="search-dep">
-            <button  type="submit">Search</button>
         </form>
     </section>
     <section class="bigtick">
@@ -62,10 +58,9 @@
             echo 'aucun resultat';
         }
     }
-        
-        
             
-            if($depSearch !== '' AND $desSearch !=='' AND $trip =='round'){
+            if($depSearch !== '' AND $desSearch !=='' AND $trip =='round'){?>
+                <h3>select departure</h3><?php
                 $res=0;
                 var_dump($trip);
                 ?><h3>select the first trip</h3><?php
