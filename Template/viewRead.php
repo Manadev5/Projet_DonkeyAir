@@ -17,7 +17,7 @@ include __DIR__.'/viewHeader.php';
 <div>
     <?php foreach($tickets as $ticket): ?>
         
-        <div>
+        <div class="classReadView">
             <p>Ticket ID: <?= htmlspecialchars($ticket['ticket_id']) ?></p>
             Departure:<h3> <?= htmlspecialchars($ticket['country']) ?></h3><br>
             Destination:<h3><?= htmlspecialchars($ticket['des_country']) ?></h3>

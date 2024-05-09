@@ -4,16 +4,28 @@
 }
 
 *{
+    border: 1px solid red; 
     font-family:caviar ;
+    margin: 0%;
+}
+
+body {
+    height: 100vh;
 }
 
 .top{
     /*text-align: center;*/
     width: 96%;
-    height: 15%;
-    display: flex;
+    height: 15vh;
+    display: none;
     justify-content: space-between;
     list-style-type: none;
+    position: fixed;
+    z-index: 100;
+}
+.classReadView {
+    height: 100vh;
+    position: relative;
 }
 .right{
     display: flex;
