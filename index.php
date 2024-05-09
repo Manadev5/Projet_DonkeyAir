@@ -60,4 +60,11 @@ if ($page=="log-out-admin"){
     logoutAdmin();
 
 }
+
+
+if ($page=="errorPage"){
+    include_once __DIR__.'/Controllers/controlLogoutA.php';
+    logoutAdmin();
+
+}
 ?>
