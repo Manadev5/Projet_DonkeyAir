@@ -6,7 +6,7 @@
         <script src="https://kit.fontawesome.com/df3c8d82d5.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <nav>
+        <nav class="top-top">
             <div class="top">
                 <div class="logo-top-left">
                     <a class="nav-link" href="index.php?page=home"><img src="assets/logo_Donkeyair.png" height="70px" style="margin-top:1%;"></a>
