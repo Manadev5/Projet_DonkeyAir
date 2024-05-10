@@ -19,11 +19,13 @@ else
     
 
 if ($page=="admin"){
+    include_once __DIR__ . '/Template/viewHeader.php';
     include __DIR__.'/Template/viewAdmin.php';
     
 }
 
 if ($page=="login"){
+    include_once __DIR__ . '/Template/viewHeader.php';
     include_once __DIR__.'/Template/viewLogin.php';
 
     

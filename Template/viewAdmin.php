@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,12 +27,6 @@
                           
             </form>
 
-            <form action="">
-            <div>
-                <button  type="submit" require>Accueil</button>
-            </div>
-            </form>
-            
         </div>
 
  

@@ -28,12 +28,6 @@
                             
                     </form>
 
-                    <form action="">
-                        <div class="wel">
-                            <button  type="submit">Accueil</button>
-                        </div>
-                    </form>
-
 
     </div>            
 </body>

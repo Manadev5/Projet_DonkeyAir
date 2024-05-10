@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+
+
 include __DIR__.'/../Controllers/controlCreate.php';
 
 include __DIR__.'/../Models/modelBasket.php';
@@ -25,7 +27,12 @@ $tickets = findTicket($_GET['id']);
 </head>
 
 <body>
-    <div class="login-form">
+    <nav>
+        <?php
+        include_once __DIR__ . '/viewHeader.php';
+         ?>
+    </nav>
+    <div >
         
 
             <form  action="../Controllers/controlUpdateTicket.php?id=<?= $tickets['ticket_id']?>" method="post" class="sign-form">
@@ -84,7 +91,7 @@ $tickets = findTicket($_GET['id']);
                     </div>
                     
                     <div  class="button">
-                    <button  type="submit">Edit Ticket / Accueil</button>
+                    <button  type="submit">Edit Ticket</button>
                     </div>
                         
                 </form>
