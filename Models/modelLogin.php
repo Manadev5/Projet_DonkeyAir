@@ -1,6 +1,6 @@
 <?php
 
-function connexion($table, $bddName, $postName,$postInput, $secondColumn, $sessionName, $id, $redirection){
+function connexion($table, $bddName, $postName,$postInput, $secondColumn, $sessionName, $id, $redirection, $location){
 
 
     include __DIR__.'/modelConnexionBdd.php';
@@ -13,9 +13,12 @@ $user = $statement->fetch(PDO::FETCH_ASSOC);
 
 try{
 
-if($postName !== $user[$bddName]){
+if(empty($postName) AND empty($postInput)){
+    header($location);
+
+}else if($postName !== $user[$bddName]){
+
     echo 'wrong username ';
-    var_dump($postName);
 
 }else{
 
