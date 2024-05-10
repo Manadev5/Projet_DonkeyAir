@@ -12,8 +12,9 @@ function connexionUser(){
   $sessionName='user_log';
   $id='user_id';
   $redirection= '../index.php';
+  $location = 'location: ../index.php?page=login';
 
-  connexion($table, $bddName, $postName,$postInput, $secondColumn, $sessionName, $id, $redirection);
+  connexion($table, $bddName, $postName,$postInput, $secondColumn, $sessionName, $id, $redirection, $location);
 
 }
 
