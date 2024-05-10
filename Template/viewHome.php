@@ -61,8 +61,6 @@
             if($depSearch !== '' AND $desSearch !=='' AND $trip =='round'){?>
                 <h3>select departure</h3><?php
                 $res=0;
-                var_dump($trip);
-                ?><h3>select the first trip</h3><?php
                   foreach($tickets as $ticket){
                     if($ticket['user_ticket_id']==NULL){
                     $res=$res+1?>

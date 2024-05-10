@@ -12,8 +12,9 @@ function connexionAdmin(){
     $sessionName='admin_log';
     $id='admin_id';
     $redirection= '../index.php?page=tickets';
+    $location ='location: ../index.php?page=admin';
 
-    connexion($table, $bddName, $postName,$postColumn, $secondColumn, $sessionName, $id, $redirection);
+    connexion($table, $bddName, $postName,$postColumn, $secondColumn, $sessionName, $id, $redirection, $location);
 
     
 
