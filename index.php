@@ -19,7 +19,7 @@ else
     
 
 if ($page=="admin"){
-    include_once __DIR__.'/Template/viewAdmin.php';
+    include __DIR__.'/Template/viewAdmin.php';
     
 }
 
@@ -35,9 +35,11 @@ if ($page=="basket"){
 }
 
 if ($page=="create"){
+    include_once __DIR__ . '/Template/viewHeader.php';
     include_once __DIR__.'/Template/viewForm.php';
 
 }
+
 
 if ($page=="tickets"){
     include __DIR__.'/Controllers/controlRead.php';

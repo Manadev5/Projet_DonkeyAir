@@ -35,6 +35,8 @@ if(empty($postName) AND empty($postInput)){
     echo "<a href='".$redirection."'>aller à la page d'accueil</a> ";
 
     }else{
+        
+        
         echo 'wrong password';
     }
 }

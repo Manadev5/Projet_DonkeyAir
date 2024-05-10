@@ -19,7 +19,7 @@ try {
 
 } 
 catch (PDOException $e) {
-  $errorMessage = "Une erreur s'est produite lors de la connexion à la base de données. Veuillez réessayer plus tard.";
-  throw new \PDOException($errorMessage, (int)$e->getCode());
+  echo 'Erreur de connexion : ' . $e->getMessage();
+  
 }
 
