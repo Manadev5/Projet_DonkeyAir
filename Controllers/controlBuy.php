@@ -11,7 +11,8 @@ function assignTicket()
     $ticketId = $_GET['id'];
 
     buyTicket($ticketId, $userId);
-   
+    removeBasket();
+
     echo 'you have bought this ticket, good travel!<br>';
     echo "<a href='../index.php'>back to home</a>";
 }
