@@ -23,7 +23,7 @@ if ($page=="home"){
     
 }
 if ($page=="admin"){
-    include_once __DIR__.'/Template/viewAdmin.php';
+    include __DIR__.'/Template/viewAdmin.php';
     
 }
 
@@ -39,7 +39,16 @@ if ($page=="basket"){
 }
 
 if ($page=="create"){
+    include_once __DIR__ . '/Template/viewHeader.php';
     include_once __DIR__.'/Template/viewForm.php';
+
+}
+if ($page=="viewEdit"){
+    include_once __DIR__.'/Template/viewEdit.php';
+
+    include_once __DIR__.'/Template/viewRead.php';
+
+    include_once __DIR__ . '/Template/viewHeader.php';
 
 }
 
@@ -62,9 +71,5 @@ if ($page=="log-out-admin"){
 }
 
 
-if ($page=="errorPage"){
-    include_once __DIR__.'/Controllers/controlLogoutA.php';
-    logoutAdmin();
 
-}
 ?>

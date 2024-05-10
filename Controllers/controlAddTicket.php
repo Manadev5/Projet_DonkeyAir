@@ -19,8 +19,11 @@ function addTicket() {
         
         header("location: ../index.php?page=tickets");
     } catch (Exception $e) {
-        $controller = new ErrorController();
-        $controller->handleError($e->getMessage());
+        
+            // Gérer les erreurs de connexion
+            echo 'Erreur de connexion : ' . $e->getMessage();
+            header("location: ../index.php?page=create");
+
     }
 }
 

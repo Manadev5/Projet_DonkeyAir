@@ -19,7 +19,7 @@ try {
 
 } 
 catch (PDOException $e) {
-  $controller = new ErrorController();
-  $controller->handleError($e->getMessage());
+  echo 'Erreur de connexion : ' . $e->getMessage();
+  
 }
 

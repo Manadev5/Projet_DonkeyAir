@@ -2,6 +2,8 @@
 
 include __DIR__.'/viewHeader.php';
 
+
+
 ?>
 
 
@@ -29,11 +31,12 @@ include __DIR__.'/viewHeader.php';
             <p>Travel number: <?= htmlspecialchars($ticket['travel_number']) ?></p>
             <p>Sit number: <?= htmlspecialchars($ticket['sit_number']) ?></p>
           
+            
            
 
-            <form action="Template/viewEdit.php?id=<?=$ticket['ticket_id']?>" method="POST">
+            <form id="mon_form" action="../Template/viewEdit.php?id=<?=$ticket['ticket_id']?>" method="POST">
                 <input type="hidden" name="ticket_id" value="<?= htmlspecialchars($ticket['ticket_id']) ?>">
-                <input type="submit" value="Modifier">
+                <input type="submit" value="Edit">
             </form>
 
             

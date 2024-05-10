@@ -32,6 +32,8 @@ if($postName !== $user[$bddName]){
     echo "<a href='".$redirection."'>aller à la page d'accueil</a> ";
 
     }else{
+        
+        
         echo 'wrong password';
     }
 }
