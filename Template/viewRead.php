@@ -20,8 +20,8 @@ include __DIR__.'/viewHeader.php';
 <div>
     <?php foreach($tickets as $ticket): ?>
         
-        <div class="classReadView">
-        <div class="ticket">
+        <div class="bigtick">
+            <div class="ticket">
                 <section class="ticket-top">
                     <ul>
                         <li><?=$ticket['boarding_hour']?></li>
@@ -54,9 +54,12 @@ include __DIR__.'/viewHeader.php';
                     </form>
 
                     
-                    <form action="Models/modelDeleteTicket.php" method="POST">
+                    <form class="d-flex" action="Models/modelDeleteTicket.php" method="POST">
+                    <div class="searching">
                         <input type="hidden" name="ticket_id" value="<?= htmlspecialchars($ticket['ticket_id']) ?>">
-                        <input type="submit" value="Delete">
+                        <input type="submit">
+                    </div>
+                        <button class="searchbutton" type="submit">Delete</button>
                     </form>
             </div>
         </div>
