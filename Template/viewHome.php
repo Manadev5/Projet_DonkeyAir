@@ -110,6 +110,34 @@
 
     <section>
         <h2>DESTINATIONS</h2>
+        <div class="biggy">
+            <div class="grid">
+                <div class="card">
+                    <img src="assets/Berlin.jpg" width="300px">
+                    <h4>Berlin</h4>
+                </div>
+                <div class="card">
+                    <img src="assets/Paris.jpg" width="300px">
+                    <h4>Paris</h4>
+                </div>
+                <div class="card">
+                    <img src="assets/Barcelone.webp" width="300px">
+                    <h4>Barcelone</h4>
+                </div>
+            </div>
+            <div class="grid">
+                
+                <div class="card">
+                    <img src="assets/Londres.avif" width="300px">
+                    <h4>Londres</h4>
+                </div>
+                <div class="card">
+                    <img src="assets/Milan.jpg" width="300px">
+                    <h4>Milan</h4>
+
+            </div>
+            </div>
+            </div>
     </section>
 
     <section>
