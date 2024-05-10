@@ -20,16 +20,32 @@ include __DIR__.'/viewHeader.php';
     <?php foreach($tickets as $ticket): ?>
         
         <div class="classReadView">
-            <p>Ticket ID: <?= htmlspecialchars($ticket['ticket_id']) ?></p>
-            Departure:<h3> <?= htmlspecialchars($ticket['country']) ?></h3><br>
-            Destination:<h3><?= htmlspecialchars($ticket['des_country']) ?></h3>
-            <p>Departure date: <?= htmlspecialchars($ticket['departure_date']) ?></p>
-            <p>Arrival date: <?= htmlspecialchars($ticket['arrival_date']) ?></p>
-            <p>Boarding hour: <?= htmlspecialchars($ticket['boarding_hour']) ?></p>
-            <p>Arrival hour: <?= htmlspecialchars($ticket['arrival_hour']) ?></p>
-            <p>Travel time: <?= htmlspecialchars($ticket['travel_time']) ?></p>
-            <p>Travel number: <?= htmlspecialchars($ticket['travel_number']) ?></p>
-            <p>Sit number: <?= htmlspecialchars($ticket['sit_number']) ?></p>
+        <div class="ticket">
+                <section class="ticket-top">
+                    <ul>
+                        <li><?=$ticket['boarding_hour']?></li>
+                        <li><?=$ticket['country']?></li>
+                    </ul>
+                    <ul>
+                        <li><?=$ticket['travel_time']?>h</li>
+
+                    </ul>
+                    
+                    <ul>
+                        <li><?=$ticket['arrival_hour']?></li>
+                        <li><?=$ticket['des_country']?></li>
+                    </ul>
+                    <ul>
+                        <li><?=$ticket['price']?>$</li>
+                    </ul>
+                    
+                </section>
+                
+                <section class="ticket-top">
+                    <li><?=$ticket['departure_date']?></li>
+                    <li><?=$ticket['arrival_date']?></li>
+                </section>  
+            </div>
           
             
            
