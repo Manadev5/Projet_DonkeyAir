@@ -127,12 +127,11 @@ ul{
 }
 .grid{
     display: flex;
-    
-    align-items: center;
+    flex-wrap: wrap;
     padding: 2%;
 }
 .card{
-    width: 320px;
+    width: 310px;
     height: 250px;
     margin: 2%;
     background-color:rgba(255, 136, 0, 0.427) ;
@@ -151,11 +150,10 @@ ul{
 
 .login-form {
     font-family: Arial, sans-serif;
-    background-color: #F5F5F5;
+    background-color: #e41b1b;
     margin: 0;
     padding: 0;
     display: flex;
-    height: 100vh;
     background-color: white;
     padding: 20px;
     border-radius: 5px;

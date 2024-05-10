@@ -32,7 +32,7 @@ $tickets = findTicket($_GET['id']);
         include_once __DIR__ . '/viewHeader.php';
          ?>
     </nav>
-    <div >
+    <div class="login-form">
         
 
             <form  action="../Controllers/controlUpdateTicket.php?id=<?= $tickets['ticket_id']?>" method="post" class="sign-form">

@@ -122,8 +122,6 @@
                     <img src="assets/Barcelone.webp" width="300px">
                     <h4>Barcelone</h4>
                 </div>
-            </div>
-            <div class="grid">
                 
                 <div class="card">
                     <img src="assets/Londres.avif" width="300px">
@@ -132,6 +130,7 @@
                 <div class="card">
                     <img src="assets/Milan.jpg" width="300px">
                     <h4>Milan</h4>
+                </div>
 
             </div>
             </div>
