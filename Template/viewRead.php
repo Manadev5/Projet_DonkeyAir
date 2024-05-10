@@ -13,6 +13,7 @@ include __DIR__.'/viewHeader.php';
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
   <title>Document</title>
 </head>
 <body>
@@ -46,20 +47,18 @@ include __DIR__.'/viewHeader.php';
                     <li><?=$ticket['arrival_date']?></li>
                 </section>  
             </div>
-          
-            
-           
 
-            <form id="mon_form" action="../Template/viewEdit.php?id=<?=$ticket['ticket_id']?>" method="POST">
-                <input type="hidden" name="ticket_id" value="<?= htmlspecialchars($ticket['ticket_id']) ?>">
-                <input type="submit" value="Edit">
-            </form>
+                    <form class="d-flex" action="../Template/viewEdit.php?id=<?=$ticket['ticket_id']?>" method="POST">
+                        <input   type="hidden" name="ticket_id" value="<?= htmlspecialchars($ticket['ticket_id']) ?>">
+                        <input type="submit" value="Edit">
+                    </form>
 
-            
-            <form action="Models/modelDeleteTicket.php" method="POST">
-                <input type="hidden" name="ticket_id" value="<?= htmlspecialchars($ticket['ticket_id']) ?>">
-                <input type="submit" value="Delete">
-            </form>
+                    
+                    <form action="Models/modelDeleteTicket.php" method="POST">
+                        <input type="hidden" name="ticket_id" value="<?= htmlspecialchars($ticket['ticket_id']) ?>">
+                        <input type="submit" value="Delete">
+                    </form>
+            </div>
         </div>
     <?php endforeach; ?>
 </div>

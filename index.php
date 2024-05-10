@@ -4,6 +4,7 @@ session_start();
 // ROUTEUR : Lien entre URL => logique (controller)
 // recuperation de l'url
 // recuperation de l'url
+$page='';
 
 if ((isset($_GET['page'])))
 {
@@ -11,17 +12,12 @@ if ((isset($_GET['page'])))
 }
 else 
 {
-    $page="home";
-}
-
-
-if ($page=="home"){
-    // logique
     include __DIR__.'/Controllers/controlHome.php';
 
     showTickets();
-    
 }
+    
+
 if ($page=="admin"){
     include __DIR__.'/Template/viewAdmin.php';
     
@@ -43,14 +39,7 @@ if ($page=="create"){
     include_once __DIR__.'/Template/viewForm.php';
 
 }
-if ($page=="viewEdit"){
-    include_once __DIR__.'/Template/viewEdit.php';
 
-    include_once __DIR__.'/Template/viewRead.php';
-
-    include_once __DIR__ . '/Template/viewHeader.php';
-
-}
 
 if ($page=="tickets"){
     include __DIR__.'/Controllers/controlRead.php';
@@ -70,6 +59,9 @@ if ($page=="log-out-admin"){
 
 }
 
+if ($page=="history"){
+    include __DIR__.'/Controllers/controlHistory.php';
 
-
+    ticketsHistory();
+}
 ?>

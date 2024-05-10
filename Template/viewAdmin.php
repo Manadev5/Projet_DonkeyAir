@@ -19,7 +19,7 @@
                     <input type="password"  id="password"  name="password">
                 </div>
                 <div class="button">
-                    <button  type="submit" require>Sign In</button>
+                    <button  type="submit" require>Log In</button>
                 </div> 
                 
                           
